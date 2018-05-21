@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,72 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextStyles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9B-ee-2lQ">
+                                <rect key="frame" x="16" y="89" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here's a title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysz-Cj-6rM">
+                                <rect key="frame" x="16" y="137" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9c-Eu-x43">
+                                <rect key="frame" x="16" y="188" width="343" height="162.5"/>
+                                <string key="text">Lorem ipsum dolor sit amet, errem quaestio philosophia eum no, accumsan principes has an. In sea prima essent praesent. Vero tibique sed ea, cu virtute fabulas constituto has. At soleat timeam sententiae mea, sumo noster has cu. Per quem diceret mediocritatem at, vidit cetero eu mei.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A caption to finish with" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="et8-Jz-PVb">
+                                <rect key="frame" x="16" y="382.5" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUa-tj-Yf7">
+                                <rect key="frame" x="164" y="438.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j9B-ee-2lQ" secondAttribute="trailing" constant="16" id="4Ua-Xm-fr0"/>
+                            <constraint firstItem="ysz-Cj-6rM" firstAttribute="trailing" secondItem="j9B-ee-2lQ" secondAttribute="trailing" id="5AC-oA-Eoa"/>
+                            <constraint firstItem="j9B-ee-2lQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7Jb-Zj-Q2x"/>
+                            <constraint firstItem="et8-Jz-PVb" firstAttribute="leading" secondItem="D9c-Eu-x43" secondAttribute="leading" id="AJJ-gv-NRX"/>
+                            <constraint firstItem="jUa-tj-Yf7" firstAttribute="top" secondItem="et8-Jz-PVb" secondAttribute="bottom" constant="35" id="LhS-ID-cPj"/>
+                            <constraint firstItem="et8-Jz-PVb" firstAttribute="trailing" secondItem="D9c-Eu-x43" secondAttribute="trailing" id="QVQ-pp-NFn"/>
+                            <constraint firstItem="D9c-Eu-x43" firstAttribute="top" secondItem="ysz-Cj-6rM" secondAttribute="bottom" constant="30" id="VB4-4b-69L"/>
+                            <constraint firstItem="jUa-tj-Yf7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XPN-Pe-kQM"/>
+                            <constraint firstItem="D9c-Eu-x43" firstAttribute="leading" secondItem="ysz-Cj-6rM" secondAttribute="leading" id="YbL-2h-ICK"/>
+                            <constraint firstItem="et8-Jz-PVb" firstAttribute="top" secondItem="D9c-Eu-x43" secondAttribute="bottom" constant="32" id="aB7-qo-Btg"/>
+                            <constraint firstItem="D9c-Eu-x43" firstAttribute="trailing" secondItem="ysz-Cj-6rM" secondAttribute="trailing" id="agw-Ux-Yaq"/>
+                            <constraint firstItem="ysz-Cj-6rM" firstAttribute="top" secondItem="j9B-ee-2lQ" secondAttribute="bottom" constant="27" id="bdx-8j-DsE"/>
+                            <constraint firstItem="j9B-ee-2lQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="i7C-3e-eHP"/>
+                            <constraint firstItem="ysz-Cj-6rM" firstAttribute="leading" secondItem="j9B-ee-2lQ" secondAttribute="leading" id="qF2-j8-OTy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bodyLabel" destination="D9c-Eu-x43" id="BKo-ye-r0Y"/>
+                        <outlet property="button" destination="jUa-tj-Yf7" id="vyw-2Y-zsG"/>
+                        <outlet property="captionLabel" destination="et8-Jz-PVb" id="AVH-bg-BVp"/>
+                        <outlet property="displayLabel" destination="j9B-ee-2lQ" id="E4f-sv-ppx"/>
+                        <outlet property="titleLabel" destination="ysz-Cj-6rM" id="XJd-P1-QLr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
